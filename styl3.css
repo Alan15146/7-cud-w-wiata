@@ -1,0 +1,206 @@
+
+* {
+box-sizing: border-box;
+}
+
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background: #e8f5e9; 
+color: #1b5e20;
+}
+
+
+section {
+padding: 20px;
+margin: 20px auto;
+max-width: 1200px;
+background: #ffffff;
+border-radius: 10px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+h1, h2, h3 {
+margin-top: 0;
+}
+
+
+
+header {
+text-align: center;
+color: white;
+padding: 30px 20px;
+background: linear-gradient(270deg, #2e7d32, #66bb6a, #1b5e20);
+background-size: 400% 400%;
+animation: gradientMove 10s ease infinite;
+}
+
+#header {
+text-align: center;
+color: white;
+padding: 30px 20px;
+background: linear-gradient(270deg, #2e7d32, #66bb6a, #1b5e20);
+background-size: 400% 400%;
+animation: gradientMove 10s ease infinite;
+}
+
+
+@keyframes gradientMove {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+
+
+nav ul {
+list-style: none;
+padding: 0;
+margin: 15px 0 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 14px;
+border-radius: 20px;
+}
+
+
+nav ul li a:hover {
+background: rgba(255,255,255,0.3);
+}
+
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 10px;
+}
+
+
+th, td {
+border: 1px solid #2e7d32;
+padding: 10px;
+text-align: center;
+}
+
+
+th {
+background: #c8e6c9;
+}
+
+
+
+form label {
+display: block;
+margin-top: 10px;
+}
+
+
+input, select {
+padding: 6px;
+width: 100%;
+max-width: 300px;
+}
+
+
+input[type="submit"],
+input[type="reset"] {
+width: auto;
+margin-top: 15px;
+padding: 10px 16px;
+background: #2e7d32;
+color: white;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+background: #1b5e20;
+}
+
+
+footer{
+background-color: #2e7d32;
+font-size: 20px;
+padding-left: 30px;
+color: white;
+
+
+}
+
+@media (max-width: 600px) {
+  header, #header{
+    text-align: center;
+color: white;
+padding: 30px 20px;
+background: linear-gradient(270deg, #3fccf0, #218199, #054d5a);
+background-size: 400% 400%;
+animation: gradientMove 10s ease infinite;
+  }}
+
+  @media (min-width: 601px) and (max-width: 1200px) {
+  header, #header{
+    text-align: center;
+color: white;
+padding: 30px 20px;
+background: linear-gradient(270deg, #b543cc, #9d2cacf8, #520852);
+background-size: 400% 400%;
+animation: gradientMove 10s ease infinite;
+  }}
+
+  @media (min-width: 1201px) {
+  header, #header{
+   text-align: center;
+color: white;
+padding: 30px 20px;
+background: linear-gradient(270deg, #2e7d32, #66bb6a, #1b5e20);
+background-size: 400% 400%;
+animation: gradientMove 10s ease infinite;
+}
+  }
+
+  .mapa {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mapa img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
